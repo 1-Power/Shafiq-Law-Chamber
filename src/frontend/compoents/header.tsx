@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import organizationLogo from "../../assets/images/shafiqLawchamber.jpeg";
 
 const Navbar = () => {
@@ -64,39 +65,39 @@ const Navbar = () => {
           </div>
           {/* Navigation Links */}
           <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-center sm:space-x-4">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="text-dracula-foreground hover:bg-dracula-current-line hover:text-dracula-pink px-3 py-2 rounded-md text-lg font-medium"
             >
               Home
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/about"
               className="text-dracula-foreground hover:bg-dracula-current-line hover:text-dracula-pink px-3 py-2 rounded-md text-lg font-medium"
             >
               About
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/services"
               className="text-dracula-foreground hover:bg-dracula-current-line hover:text-dracula-pink px-3 py-2 rounded-md text-lg font-medium"
             >
               Services
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/contact"
               className="text-dracula-foreground hover:bg-dracula-current-line hover:text-dracula-pink px-3 py-2 rounded-md text-lg font-medium"
             >
               Contact
-            </a>
+            </Link>
           </div>
           {/* Appointment Button */}
           <div className="hidden sm:flex">
-            <a
-              href="#"
+            <Link
+              to="#"
               className="bg-dracula-pink text-dracula-bg hover:bg-dracula-foreground hover:text-dracula-bg px-3 py-2 rounded-md text-lg font-medium"
             >
               Appointment
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -105,36 +106,36 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="sm:hidden bg-dracula-bg" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="text-dracula-foreground hover:bg-dracula-current-line hover:text-dracula-pink block px-3 py-2 rounded-md text-base font-medium"
             >
               Home
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/about"
               className="text-dracula-foreground hover:bg-dracula-current-line hover:text-dracula-pink block px-3 py-2 rounded-md text-base font-medium"
             >
               About
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/services"
               className="text-dracula-foreground hover:bg-dracula-current-line hover:text-dracula-pink block px-3 py-2 rounded-md text-base font-medium"
             >
               Services
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/contact"
               className="text-dracula-foreground hover:bg-dracula-current-line hover:text-dracula-pink block px-3 py-2 rounded-md text-base font-medium"
             >
               Contact
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/contact"
               className="bg-dracula-pink text-dracula-bg hover:bg-dracula-foreground hover:text-dracula-bg block px-3 py-2 rounded-md text-base font-medium"
             >
               Appointment
-            </a>
+            </Link>
           </div>
         </div>
       )}

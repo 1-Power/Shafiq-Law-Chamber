@@ -1,15 +1,13 @@
 import BaseHead from "./compoents/baseHead";
-import Navbar from "./compoents/header";
-import LandingPage from "./pages/landing";
 import Footer from "./compoents/footer";
+import Router from "../backend/routes/routes";
 
 function App() {
   return (
     <>
       {/* All Imports */}
       <BaseHead />
-      <Navbar />
-      <LandingPage />
+      <Router />
       <Footer />
     </>
   );
