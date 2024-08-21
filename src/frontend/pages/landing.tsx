@@ -17,7 +17,7 @@ const LandingPage = () => {
               dedication.
             </p>
             <a
-              href="#services"
+              href="/contact"
               className="mt-8 inline-block bg-dracula-pink text-dracula-bg hover:bg-dracula-foreground hover:text-dracula-bg px-6 py-3 rounded-md text-lg font-medium"
             >
               Get In Touch

@@ -84,16 +84,16 @@ const Navbar = () => {
               Services
             </Link>
             <Link
-              to="/contact"
+              to="/caselaw"
               className="text-dracula-foreground hover:bg-dracula-current-line hover:text-dracula-pink px-3 py-2 rounded-md text-lg font-medium"
             >
-              Contact
+              Case Law
             </Link>
           </div>
           {/* Appointment Button */}
           <div className="hidden sm:flex">
             <Link
-              to="#"
+              to="/contact"
               className="bg-dracula-pink text-dracula-bg hover:bg-dracula-foreground hover:text-dracula-bg px-3 py-2 rounded-md text-lg font-medium"
             >
               Appointment
@@ -125,10 +125,10 @@ const Navbar = () => {
               Services
             </Link>
             <Link
-              to="/contact"
+              to="/caselaw"
               className="text-dracula-foreground hover:bg-dracula-current-line hover:text-dracula-pink block px-3 py-2 rounded-md text-base font-medium"
             >
-              Contact
+              Case Law
             </Link>
             <Link
               to="/contact"

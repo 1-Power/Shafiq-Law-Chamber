@@ -6,6 +6,7 @@ import AboutMePage from "../../frontend/pages/aboutUs";
 import servicesPage from "../../frontend/pages/services";
 import ContactPage from "../../frontend/pages/contact";
 import NavBar from "../../frontend/compoents/header";
+import CaseLaw from "../../frontend/pages/caseLaw";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/about" Component={AboutMePage} />
           <Route path="/services" Component={servicesPage} />
           <Route path="/contact" Component={ContactPage} />
+          <Route path="/caselaw" Component={CaseLaw} />
         </Routes>
       </div>
     </Router>
