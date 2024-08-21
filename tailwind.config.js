@@ -6,6 +6,14 @@ module.exports = {
       maxWidth: {
         "7.5xl": "85rem",
       },
+      scrollbarHide: {
+        "&::-webkit-scrollbar": {
+          display: "none",
+        },
+        "-ms-overflow-style": "none", // IE and Edge
+        "scrollbar-width": "none", // Firefox
+      },
+
       colors: {
         // "dracula-bg": "#282A36",
         // "dracula-current-line": "#44475A",
@@ -36,5 +44,18 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".scrollbar-hide": {
+          "&::-webkit-scrollbar": {
+            display: "none",
+          },
+          "-ms-overflow-style": "none", // IE and Edge
+          "scrollbar-width": "none", // Firefox
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 };

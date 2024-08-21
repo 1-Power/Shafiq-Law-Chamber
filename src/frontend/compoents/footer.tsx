@@ -1,6 +1,13 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaEnvelope,
+  FaPhoneAlt,
+} from "react-icons/fa";
 
-export default function footer() {
+export default function Footer() {
   return (
     <div className="text-dracula-foreground">
       <footer className="bg-dracula-current-line py-6">
@@ -42,7 +49,26 @@ export default function footer() {
             >
               <FaLinkedin size={24} />
             </a>
+            <a
+              href="mailto:shafiq@lawchamber.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-dracula-foreground hover:text-dracula-cyan"
+            >
+              <FaEnvelope size={24} />
+            </a>
+            <a
+              href="tel:03009817389"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-dracula-foreground hover:text-dracula-cyan"
+            >
+              <FaPhoneAlt size={24} />
+            </a>
           </div>
+          <p className="mt-4">
+            Developed by <span className="font-bold">Bytereaka</span>
+          </p>
         </div>
       </footer>
     </div>
