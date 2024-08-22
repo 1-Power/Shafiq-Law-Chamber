@@ -3,6 +3,7 @@ import YourLeagueTeam from "../compoents/landingPageCompoents/YourLeagueTeam";
 import OurValues from "../compoents/aboutUsPageCompoents/CoreValueSection";
 import TestimonialSection from "../compoents/aboutUsPageCompoents/TestimonialSection";
 import ServicesSection from "../pages/services";
+import ConnectSection from "../compoents/landingPageCompoents/SendUsAMessage";
 const LandingPage = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const LandingPage = () => {
       {/* Our Testimonials */}
       <TestimonialSection />
       {/* Send Us a Message */}
+      <ConnectSection />
     </>
   );
 };
