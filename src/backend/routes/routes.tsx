@@ -7,6 +7,7 @@ import servicesPage from "../../frontend/pages/services";
 import ContactPage from "../../frontend/pages/contact";
 import NavBar from "../../frontend/compoents/header";
 import CaseLaw from "../../frontend/pages/caseLaw";
+import AdminPage from "../../frontend/pages/admin/login";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/services" Component={servicesPage} />
           <Route path="/contact" Component={ContactPage} />
           <Route path="/caselaw" Component={CaseLaw} />
+          <Route path="/admin" Component={AdminPage} />
         </Routes>
       </div>
     </Router>
