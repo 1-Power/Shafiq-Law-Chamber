@@ -1,24 +1,23 @@
-// export default function AdminLogIn() {
-//   return (
-//     <div>
-//       <h1>Admin Log In</h1>
-//     </div>
-//   );
-// }
-
 import React, { useState } from "react";
+import { auth } from "../../../backend/firebase/connection";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 const AdminLogin: React.FC = () => {
-  console.log("AdminLogin rendered");
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleSignIn = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    console.log("Email:", email);
-    console.log("Password:", password);
+    try {
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      console.log("User signed in:", userCredential.user);
+    } catch (error) {
+      console.error("Error signing in:", error);
+    }
   };
 
   return (
@@ -27,7 +26,7 @@ const AdminLogin: React.FC = () => {
         <h2 className="text-3xl font-bold text-center text-gray-900">
           Admin Login
         </h2>
-        <form className="mt-8 space-y-6" onSubmit={handleLogin}>
+        <form className="mt-8 space-y-6" onSubmit={handleSignIn}>
           <div className="space-y-4">
             <div>
               <label

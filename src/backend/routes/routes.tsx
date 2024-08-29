@@ -52,13 +52,13 @@ const PublicRoutes = () => (
 );
 
 // Admin Routes Layout (Without NavBar)
-const AdminRoutes = () => (
-  <div className="bg-admin-bg text-admin-foreground min-h-screen">
-    <Routes>
-      <Route path="/admin" element={<AdminPage />} />
-    </Routes>
-  </div>
-);
+// const AdminRoutes = () => (
+//   <div className="bg-admin-bg text-admin-foreground min-h-screen">
+//     <Routes>
+//       <Route path="/admin" element={<AdminPage />} />
+//     </Routes>
+//   </div>
+// );
 
 const AppRoutes = () => {
   return (
